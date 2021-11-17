@@ -1,0 +1,350 @@
+/* font */
+@font-face {
+    font-family: "Crush";
+    src: url(police/BrightlyCrushShine.otf) format("Opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "KG";
+    src: url(police/kg_happy/KGHAPPY.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "BALL";
+    src: url(police/ballpark.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+:root {
+    font-size: 10px;
+    background-image: url();
+    background-size: 100% 100%;
+}
+
+p {
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 1.9rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+/*title*/
+.question {
+    font-family: Crush;
+    text-align: center;
+    padding-top: 20px;
+ 
+}
+
+.welcome {
+    font-family: Crush;
+    text-align: center;
+}
+
+#intro {
+    font-family:'Lucida Sans', 
+    'Lucida Sans Regular', 
+    'Lucida Grande', 
+    'Lucida Sans Unicode', 
+    Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+/*button*/
+
+#button-fortnite, #button-fifa, #button-mario, #button-brawl, #button-mincraft, #button-ufc, #button-rocket, #button-dokkan {
+    color:black;
+    border: solid black 1px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px grey;
+    padding: 2px;
+}
+
+#button-fortnite {
+    grid-area: B1;
+}
+
+#button-fifa {
+    grid-area: B2;
+}
+
+#button-mario {
+    grid-area: B3;
+}
+
+#button-brawl {
+    grid-area: B4;
+}
+
+#button-mincraft {
+    grid-area: B5;
+}
+
+#button-ufc {
+    grid-area: B6;
+}
+
+#button-rocket {
+    grid-area: B7;
+}
+
+#button-dokkan {
+    grid-area: B8;
+}
+
+nav {
+    font-family: KG;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(8,auto);
+    grid-template-areas: 
+    ". B1 ."
+    ". B2 ."
+    ". B3 ."
+    ". B4 ."
+    ". B5 ."
+    ". B6 ."
+    ". B7 ."
+    ". B8 .";
+    padding: 5px;
+    gap: 15px;
+}
+
+/*articles*/
+#title-fortnite , #title-fifa , #title-mario, #title-brawl, #title-mincraft, #title-ufc, #title-rocket, #title-dokkan {
+    font-family: Crush;
+    color:black;
+    text-align: center;
+}
+
+#legend-fortnite , #legend-fifa , #legend-mario, #legend-brawl, #legend-mincraft, #legend-ufc ,#legend-rocket ,#legend-dokkan {
+    text-align: justify;
+    font-family:'Lucida Sans', 
+    'Lucida Sans Regular', 
+    'Lucida Grande', 
+    'Lucida Sans Unicode', 
+    Geneva, Verdana, sans-serif;
+}
+
+#title-fortnite {
+    grid-area: T1;
+    font-size: 17px;
+}
+
+#title-fifa {
+    grid-area: T2;
+}
+
+#title-mario {
+    grid-area: T3;
+}
+
+#title-brawl {
+    grid-area: T4;
+}
+
+#title-mincraft {
+    grid-area: T5;
+}
+
+#title-ufc {
+    grid-area: T6;
+}
+
+#title-rocket {
+    grid-area: T7;
+}
+
+#title-dokkan {
+    grid-area: T8;
+}
+
+#img-fortnite {
+    grid-area: I1;
+}
+
+#img-fifa {
+    grid-area: I2;
+}
+
+#img-mario {
+    grid-area: I3;
+}
+
+#img-brawl {
+    grid-area: I4;
+}
+
+#img-mincraft {
+    grid-area: I5;
+}
+
+#img-ufc {
+    grid-area: I6;
+}
+
+#img-rocket {
+    grid-area: I7;
+}
+
+#img-dokkan {
+    grid-area: I8;
+}
+
+#legend-fortnite {
+    grid-area: L1;
+}
+
+#legend-fifa {
+    grid-area: L2;
+}
+
+#legend-mario {
+    grid-area: L3;
+}
+
+#legend-brawl {
+    grid-area: L4;
+}
+
+#legend-mincraft {
+    grid-area: L5;
+}
+
+#legend-ufc {
+    grid-area: L6;
+}
+
+#legend-rocket {
+    grid-area: L7;
+}
+
+#legend-dokkan {
+    grid-area: L8;
+}
+
+#fortnite {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px 200px 180px ;
+    grid-template-areas: 
+    "T1"
+    "I1"
+    "L1";
+    padding: 10px;
+    }
+
+#fifa{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 200px 180px ;
+    grid-template-areas: 
+    "T2"
+    "I2"
+    "L2";
+    padding: 10px;
+    }
+
+#mario {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 200px 160px ;
+    grid-template-areas: 
+    "T3"
+    "I3"
+    "L3";
+    padding: 10px;
+    }
+
+#brawl {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 200px 180px ;
+    grid-template-areas: 
+    "T4"
+    "I4"
+    "L4";
+    gap: 10px;
+    padding: 10px;
+    }
+    
+#mincraft {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 200px 180px ;
+    grid-template-areas: 
+    "T5"
+    "I5"
+    "L5";
+    gap: 10px;
+    padding: 10px;
+    }
+    
+#ufc {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 200px 180px ;
+    grid-template-areas: 
+    "T6"
+    "I6"
+    "L6";
+    gap: 10px;
+    padding: 10px;
+    }    
+ 
+#rocket {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 200px 180px ;
+    grid-template-areas: 
+    "T7"
+    "I7"
+    "L7";
+    gap: 10px;
+    padding: 10px;
+    }    
+
+#dokkan {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 200px 180px ;
+    grid-template-areas: 
+    "T8"
+    "I8"
+    "L8";
+    gap: 10px;
+    padding: 10px;
+    }    
+
+/*images*/
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/*footer*/
+#the-end {
+    text-align: center;
+    font-size: 14px;
+    font-family: Crush;
+}
