@@ -1,0 +1,19 @@
+{
+  "name": "games_of_r",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass":"sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mysmallworld/Games_of_R.git"
+  },
+  "author": "Inès Cheikh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mysmallworld/Games_of_R/issues"
+  },
+  "homepage": "https://github.com/mysmallworld/Games_of_R#readme"
+}
