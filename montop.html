@@ -6,14 +6,15 @@
     <meta name="description" content="Vous aimez les jeux vidéos ? Bienvenue dans les Games of R !"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="index.html"/>
+    <link rel="stylesheet" href="sass/main.scss"/>
+    <link rel="import" href="index.html"/>
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
     <title>Games of R</title>
 </head>
 
 <body>
     <header class="header">
-       <a href="index.html" id="page_acceuil"><h1>Voici une petite liste de mes jeux préférés</h1></a>
+       <a href="index.html" class="page_acceuil"><h1>Voici une petite liste de mes jeux préférés</h1></a>
         <span><i class="fas fa-arrow-circle-left"></i></span>
             
         <nav class="btn">
@@ -148,9 +149,21 @@
         </article>
     </main>
 
-    <footer class="footer">
+    <footer class="footer_page">
         <h3 class="footer_end">À très bientôt pour une nouvelle sélection...</h3>
         <img src="image/goku.gif" alt="gif goku bye" class="footer_img"/>
+        <h3>N'hésitez pas à nous suivre</h3>
+            <ul>
+                <li>
+                    <a class="social" title="twitter" href="https://twitter.com"><span class="fa fa-twitter icon-md"></span></a>
+                </li>
+                <li>
+                    <a class="social" title="facebook" href="https://www.facebook.com"><span class="fa fa-facebook icon-md"></span></a>
+                </li>
+                <li>
+                    <a class="social" title="instagram" href="https://www.instagram.com"><span class="fa fa-instagram icon-md"></span></a>
+                </li>
+            </ul>
     </footer>
     </body>
 </html>

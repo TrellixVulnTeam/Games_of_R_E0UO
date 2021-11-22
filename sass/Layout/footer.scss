@@ -1,0 +1,18 @@
+.footer {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+
+        &_title {
+            text-align: center;
+            padding: 5px 0 10px 0;
+        }
+        
+        &_link {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 5px 0 5px 0;
+        }
+}
