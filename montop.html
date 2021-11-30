@@ -5,31 +5,35 @@
     <meta name="keywords" content="blog jeux vidéos, blog, jeux vidéos, top 10"/>
     <meta name="description" content="Vous aimez les jeux vidéos ? Bienvenue dans les Games of R !"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="fontawesome/fontawesome-free-5.15.2-web/css/all.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7399728304.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="sass/main.scss"/>
     <link rel="import" href="index.html"/>
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
     <title>Games of R</title>
 </head>
 
-<body>
-    <header class="header">
-       <a href="index.html" class="page_acceuil"><h1>Voici une petite liste de mes jeux préférés</h1></a>
-        <span><i class="fas fa-arrow-circle-left"></i></span>
+<body class="page_content--top">
+    <header class="header--top">
+       <div class="header--top--back"><a href="index.html"><span>Accueil</span></a></div>
+       <h1 class="header--top--title">Voici une petite liste de mes jeux préférés :</h1>
+        
             
-        <nav class="btn">
-            <a href="#fortnite" class="btn_fortnite">Fortnite</a>
-            <a href="#fifa" id="btn_fifa">Fifa</a>
-            <a href="#mario" id="btn_mario">MarioKart</a>
-            <a href="#brawl" id="btn_brawl">Brawl Stars</a>
-            <a href="#mincraft" id="btn_mincraft">Mincraft</a>
-            <a href="#ufc" id="btn_ufc">UFC</a>
-            <a href="#rocket" id="btn_rocket">Rocket League</a>
-            <a href="#dokkan" id="btn_dokkan">Dokkan Battle</a>
+        <nav class="header--top--btn">
+            <a href="#fortnite" id="btn_fortnite"><span>Fortnite</span></a>
+            <a href="#fifa" id="btn_fifa"><span>Fifa</span></a>
+            <a href="#mario" id="btn_mario"><span>MarioKart</span></a>
+            <a href="#brawl" id="btn_brawl"><span>Brawl Stars</span></a>
+            <a href="#mincraft" id="btn_mincraft"><span>Mincraft</span></a>
+            <a href="#ufc" id="btn_ufc"><span>UFC</span></a>
+            <a href="#rocket" id="btn_rocket"><span>Rocket League</span></a>
+            <a href="#dokkan" id="btn_dokkan"><span>Dokkan Battle</span></a>
         </nav>
     </header>
 
-    <main>
+    <main class="cards">
         <article class="card">
             <h2 class="card_title">
             Fortnite Battle Royale (Saison 7) <br />
@@ -95,7 +99,7 @@
         <article class="card">
             <h2 class="card_title">Mincraft</h2>
 
-            <img src="image/mincraft.jpg" alt="affiche mincraft" class="class_img"/>
+            <img src="image/mincraft.jpg" alt="affiche mincraft" class="card_img"/>
 
             <p class="card_legend">
             Sorti en 2017, Brawl Stars est un jeu de combat multijoueur
@@ -147,13 +151,15 @@
             compte 49 brawlers.
             </p>
         </article>
+        
+        <h3 class="card_end">À très bientôt pour une nouvelle sélection...</h3>
+        <img src="image/goku.gif" alt="gif goku bye" class="footer_img"/>
     </main>
 
-    <footer class="footer_page">
-        <h3 class="footer_end">À très bientôt pour une nouvelle sélection...</h3>
-        <img src="image/goku.gif" alt="gif goku bye" class="footer_img"/>
-        <h3>N'hésitez pas à nous suivre</h3>
-            <ul>
+    
+        <footer class="footer">
+        <h3 class="footer_title">N'hésitez pas à nous suivre</h3>
+            <ul class="footer_link">
                 <li>
                     <a class="social" title="twitter" href="https://twitter.com"><span class="fa fa-twitter icon-md"></span></a>
                 </li>

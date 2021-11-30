@@ -1,7 +1,7 @@
 .footer {
     width: 100%;
     height: auto;
-    position: absolute;
+    position: relative;
     bottom: 0;
     background: linear-gradient($color-header,$color-back,$color-footer);
 
@@ -15,5 +15,11 @@
             flex-direction: row;
             justify-content: space-around;
             padding: 5px 0 5px 0;
+        }
+
+        &_title , &_link span {
+            font-family: $font-family;
+            font-weight: $fontweight;
+            color: white;
         }
 }
