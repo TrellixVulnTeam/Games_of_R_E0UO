@@ -1,25 +1,32 @@
-#page_content {
-    background-image: url(../image/mobile.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
 * {
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
-    color: black;
+    color: white;
+    font-weight: $fontweight;
+    font-family: $font-family;
 }
 
 //Page d'accueil
-
 .page {
+    background-image: url(../image/mobile.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 100%;
-    height: auto;
-    display: inline-block;
+    height: 690px;
     text-align: center;
-    padding-top: 50%;
+    
+
+    &_title {
+        padding-top: 50%;
+        color: black;
+    }
+    &_subtitle {
+        font-size: 20px;
+        padding-top: 50px;
+        color: black;
+    }
 }

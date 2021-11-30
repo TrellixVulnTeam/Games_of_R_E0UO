@@ -1,30 +1,50 @@
-#page_content {
-  background-image: url(../image/mobile.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 * {
   padding: 0;
   margin: 0;
   text-decoration: none;
   list-style: none;
-  color: black;
+  color: white;
+  font-weight: bold;
+  font-family: "Abril Fatface", cursive;
 }
 
 .page {
+  background-image: url(../image/mobile.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   width: 100%;
-  height: auto;
-  display: inline-block;
+  height: 690px;
   text-align: center;
+}
+.page_title {
   padding-top: 50%;
+  color: black;
+}
+.page_subtitle {
+  font-size: 20px;
+  padding-top: 50px;
+  color: black;
 }
 
 .header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  width: 100%;
+  height: 50px;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(#255793, #74BFCA, #255793);
+}
+.header_menu, .header_top {
+  font-size: 16px;
+  border: solid #1D457A 2px;
+  border-radius: 10px 20px 10px 20px;
+  padding: 2px 10px 2px 10px;
+}
+.header_menu:hover, .header_top:hover {
+  background: linear-gradient(#255793, #255793, #59A7C5);
 }
 
 .footer {
@@ -32,6 +52,7 @@
   height: auto;
   position: absolute;
   bottom: 0;
+  background: linear-gradient(#255793, #74BFCA, #59A7C5);
 }
 .footer_title {
   text-align: center;

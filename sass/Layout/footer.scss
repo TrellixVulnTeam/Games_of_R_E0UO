@@ -3,6 +3,7 @@
     height: auto;
     position: absolute;
     bottom: 0;
+    background: linear-gradient($color-header,$color-back,$color-footer);
 
         &_title {
             text-align: center;
