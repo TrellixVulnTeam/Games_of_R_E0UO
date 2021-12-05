@@ -1,0 +1,29 @@
+.header , .header--top--back {
+    span {
+        border: solid $color-border 2px;
+        border-radius: 10px 20px 10px 20px;
+        padding: 2px 10px 2px 10px;
+        font-family: $font-title;
+        font-weight: $fontweight;
+        color: white;
+    }
+
+    span:hover {
+        background: linear-gradient($color-header,$color-header,$color-footer);
+    }
+}
+
+
+.header--top--btn .btn span {
+
+        border: solid $color-border 2px;
+        border-radius: 10px 20px 10px 20px;
+        padding: 2px 10px 2px 10px; 
+        font-weight: $fontweight;
+        font-size: 16px; 
+        }
+    
+        span:hover {
+            background: linear-gradient($color-header,$color-header,$color-footer);
+            color: white;
+        }        
