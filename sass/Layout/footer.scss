@@ -1,7 +1,6 @@
-.footer {
+.footer, .footer--top {
     width: 100%;
     height: auto;
-    position: relative;
     bottom: 0;
     background: linear-gradient($color-header,$color-back,$color-footer);
 
@@ -22,4 +21,11 @@
             font-weight: $fontweight;
             color: white;
         }
+}
+
+.footer {
+    position: absolute;
+}
+.footer--top {
+    position: relative;
 }

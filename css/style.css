@@ -1,3 +1,4 @@
+/*Medias Queries*/
 .header span, .header--top--back span {
   border: solid #1D457A 2px;
   border-radius: 10px 20px 10px 20px;
@@ -41,7 +42,6 @@ span:hover {
 }
 
 .header_menu, .header_top {
-  font-size: 16px;
   border: solid #1D457A 2px;
   border-radius: 10px 20px 10px 20px;
   padding: 2px 10px 2px 10px;
@@ -51,11 +51,25 @@ span:hover {
 }
 
 .header--top--title {
-  font-size: 20px;
   color: #eff2f3;
   text-align: center;
   padding: 10px;
   font-family: "Abril Fatface", cursive;
+}
+@media (max-width: 466px) {
+  .header--top--title {
+    font-size: 20px;
+  }
+}
+@media (min-width: 467px) {
+  .header--top--title {
+    font-size: 25px;
+  }
+}
+@media (min-width: 700px) {
+  .header--top--title {
+    font-size: 30px;
+  }
 }
 .header--top--btn {
   display: flex;
@@ -68,57 +82,101 @@ a > span {
   color: black;
 }
 
-.footer {
+.footer, .footer--top {
   width: 100%;
   height: auto;
-  position: relative;
   bottom: 0;
   background: linear-gradient(#255793, #74BFCA, #59A7C5);
 }
-.footer_title {
+.footer_title, .footer--top_title {
   text-align: center;
   padding: 5px 0 10px 0;
 }
-.footer_link {
+.footer_link, .footer--top_link {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 5px 0 5px 0;
 }
-.footer_title, .footer_link span {
+.footer_title, .footer_link span, .footer--top_title, .footer--top_link span {
   font-family: "Abril Fatface", cursive;
   font-weight: bold;
   color: white;
 }
 
+.footer {
+  position: absolute;
+}
+
+.footer--top {
+  position: relative;
+}
+
 .page, .page_content--top {
   background-image: url(../image/mobile.jpg);
   background-attachment: fixed;
-  background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  width: 100%;
-}
-
-.page {
-  width: 100%;
-  height: 690px;
   text-align: center;
 }
-.page_title {
-  padding-top: 50%;
+@media (max-width: 466px) {
+  .page, .page_content--top {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 685px;
+  }
+}
+@media (min-width: 467px) {
+  .page, .page_content--top {
+    background-size: contain;
+    width: 100%;
+    height: 1000px;
+  }
+}
+.page_title, .page_content--top_title {
   color: black;
 }
-.page_subtitle {
-  font-size: 20px;
+@media (max-width: 466px) {
+  .page_title, .page_content--top_title {
+    font-size: 20px;
+    padding-top: 50%;
+  }
+}
+@media (min-width: 467px) {
+  .page_title, .page_content--top_title {
+    padding-top: 30%;
+    font-size: 25px;
+  }
+}
+@media (min-width: 700px) {
+  .page_title, .page_content--top_title {
+    font-size: 35px;
+  }
+}
+.page_subtitle, .page_content--top_subtitle {
   padding-top: 50px;
   color: black;
 }
-.page_content span, .page_content h1, .page_content h2, .page_content h3 {
+@media (max-width: 466px) {
+  .page_subtitle, .page_content--top_subtitle {
+    font-size: 20px;
+  }
+}
+@media (min-width: 467px) {
+  .page_subtitle, .page_content--top_subtitle {
+    font-size: 30px;
+  }
+}
+@media (min-width: 700px) {
+  .page_subtitle, .page_content--top_subtitle {
+    font-size: 40px;
+  }
+}
+.page_content span, .page_content h1, .page_content h2, .page_content h3, .page_content--top_content span, .page_content--top_content h1, .page_content--top_content h2, .page_content--top_content h3 {
   font-family: "Abril Fatface", cursive;
   font-weight: bold;
 }
-.page_content span, .page_content h3 {
+.page_content span, .page_content h3, .page_content--top_content span, .page_content--top_content h3 {
   color: white;
 }
 

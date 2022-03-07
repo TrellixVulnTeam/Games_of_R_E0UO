@@ -1,26 +1,48 @@
 //Page d'accueil
-.page , .page_content--top{
+.page , .page_content--top {
     background-image: url(../image/mobile.jpg);
     background-attachment: fixed;
-    background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    width: 100%;
-}
-
-.page {
-    width: 100%;
-    height: 690px;
     text-align: center;
-        
+
+    @include for-mobile {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 685px;
+    }
+    @include for-mini-tablet {
+        background-size: contain;    
+        width: 100%;
+        height: 1000px;
+    }
+
     &_title {
-        padding-top: 50%;
         color: black;
+        @include for-mobile {
+            font-size: 20px;
+            padding-top: 50%;
+        }
+        @include for-mini-tablet {
+            padding-top: 30%;
+            font-size: 25px;
+        }
+        @include for-tablet {
+            font-size: 35px;
+        }
     }
     &_subtitle {
-        font-size: 20px;
         padding-top: 50px;
         color: black;
+        @include for-mobile {
+            font-size: 20px;
+        }
+        @include for-mini-tablet {
+            font-size: 30px;
+        }
+        @include for-tablet {
+            font-size: 40px;
+        }
     }
 
     &_content span ,&_content h1, &_content h2, &_content h3 {
